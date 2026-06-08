@@ -42,7 +42,7 @@ export default function Hero() {
         className="relative z-10 text-center px-7"
       >
         <motion.div variants={fadeUp}>
-          <TagLine className="mb-5">Se casan</TagLine>
+          <TagLine className="mb-5">Con amor, les anunciamos</TagLine>
         </motion.div>
 
         <motion.h2

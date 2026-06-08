@@ -15,12 +15,15 @@ import Intro from "./sections/Intro";
 import Hero from "./sections/Hero";
 import Quote from "./sections/Quote";
 import Countdown from "./sections/Countdown";
-import History from "./sections/History";
+import Moment from "./sections/Moment";
 import Gallery from "./sections/Gallery";
 import Ceremony from "./sections/Ceremony";
+import Party from "./sections/Party";
 import DressCode from "./sections/DressCode";
 import RSVP from "./sections/RSVP";
+import Honeymoon from "./sections/Honeymoon";
 import Final from "./sections/Final";
+
 
 import { CONFIG } from "./config";
 
@@ -44,21 +47,28 @@ export default function App() {
                 <Hero />
                 <Quote />
                 <Countdown />
-                <History />
+                <Moment />
                 <Gallery />
                 <Ceremony />
+                <Party />
                 <DressCode />
                 <RSVP />
+                <Honeymoon />
                 <Final />
 
                 {/* Footer mínimo */}
                 <footer
-                    className="py-10 text-center border-t"
+                    className="py-10 text-center border-t gap-2"
                     style={{ background: "#1a1612", borderColor: "rgba(255,255,255,0.06)" }}
                 >
                     <p className="font-sans text-[10px] tracking-[0.18em] text-[#8a8178] uppercase">
                         {CONFIG.names.full} · {CONFIG.event.dateShort}
                     </p>
+                    <p className="font-sans text-[10px] tracking-[0.18em] text-[#8a8178] uppercase ">
+                        Fotografías por <a href="https://www.instagram.com/faqberta" target="_blank" rel="noreferrer" className="hover:underline" >Faq Berta</a>
+                    </p>
+
+                
                 </footer>
             </main>
 

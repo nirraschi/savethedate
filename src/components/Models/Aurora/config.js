@@ -3,6 +3,22 @@
 //  Editá este archivo para personalizar toda la invitación.
 //  No necesitás tocar ningún otro archivo para el contenido.
 // ============================================================
+import intro from "./photos/intro.jpg";
+import hero from "./photos/hero.jpg";
+import final from "./photos/final.jpg";
+
+//Historia
+import moment1 from "./photos/history1.jpg";
+import history2 from "./photos/history2.jpg";
+import history3 from "./photos/history3.jpg";
+//import history4 from "./photos/history4.jpg";
+
+//Gallery
+import gallery1 from "./photos/gallery1.jpg";
+import gallery2 from "./photos/gallery2.jpg";
+import gallery3 from "./photos/gallery3.jpg";
+import gallery4 from "./photos/gallery4.jpg";
+import gallery5 from "./photos/gallery5.jpg";
 
 export const CONFIG = {
 
@@ -16,17 +32,26 @@ export const CONFIG = {
   // ── Fecha y lugar ───────────────────────────────────────
   event: {
     date: "18 de diciembre, 2026",
-    dateShort: "18 · 12 · 2026",
-    dateISO: "2026-12-18T20:00:00", // para el countdown
-    time: "20:00 hs",
-    venue: "Palacio San Telmo",
-    address: "Av. Hipólito Yrigoyen 500, Buenos Aires",
-    mapsUrl: "https://maps.google.com/?q=Palacio+San+Telmo+Buenos+Aires",
+    dateShort: "18 · 10 · 2026",
+    dateISO: "2026-10-18T20:00:00", // para el countdown
+    time: "17:00 hs",
+    venue: "Parroquia Nuestra Señora del Valle",
+    address: "Florida Sur 251, T4107 Yerba Buena, Tucumán",
+    mapsUrl: "https://maps.app.goo.gl/aWAkLf8hUUmNfEZ49",
+  },
+  party: {
+    date: "18 de diciembre, 2026",
+    dateShort: "18 · 10 · 2026",
+    dateISO: "2026-10-18T21:00:00", // para el countdown
+    time: "21:00 hs",
+    venue: "Nuevo Terrazas de San José",
+    address: "La Rioja 3000, Yerba Buena, Tucumán",
+    mapsUrl: "https://maps.app.goo.gl/r5CuvTAQvrHQhK3DA",
   },
 
   // ── Textos editables ─────────────────────────────────────
   texts: {
-    introTagline: "Con amor, les anunciamos",
+    introTagline: "Una invitacion de",
     introCta: "Abrir invitación",
     heroTitle: "Nos casamos",
     quote: "Cada historia de amor es hermosa,\npero la nuestra es nuestra favorita.",
@@ -37,41 +62,29 @@ export const CONFIG = {
 
   // ── Historia / Timeline ──────────────────────────────────
   // Agregá o quitá items libremente
-  history: [
-    {
-      year: "2019",
-      text: "Nos conocimos en una tarde de otoño. Una mirada y el mundo se ordenó.",
-      image: "https://images.unsplash.com/photo-1591604021695-0c69b7c05981?w=800&q=75&auto=format&fit=crop",
-    },
-    {
-      year: "2022",
-      text: "El viaje que lo cambió todo. Dos semanas, tres países, una sola certeza.",
-      image: null, // sin foto en este item
-    },
-    {
-      year: "2024",
-      text: "La pregunta que ya conocíamos. La respuesta que siempre fue sí.",
-      image: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&q=75&auto=format&fit=crop",
-    },
-    {
-      year: "2026",
-      text: "El sí, ante todos.",
-      image: null,
-    },
-  ],
+  moment: {
+  image: moment1,
+
+  quote:
+    "Y de repente, todos los caminos nos trajeron hasta aquí.",
+
+  text:
+    "Con alegría y emoción queremos compartir este día junto a quienes forman parte de nuestra historia."
+},
 
   // ── Fotos ────────────────────────────────────────────────
   // Reemplazá las URLs por tus propias fotos
   images: {
-    intro: "https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?w=1200&q=80&auto=format&fit=crop",
-    hero:  "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=1400&q=80&auto=format&fit=crop",
-    final: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1400&q=80&auto=format&fit=crop",
+    intro: intro,
+    hero: hero,
+    final: final,
     // Galería — agregá o quitá fotos
     gallery: [
-      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=900&q=80&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1507504031003-b417219a0fde?w=600&q=75&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&q=75&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1460978812857-470ed1c77af0?w=600&q=75&auto=format&fit=crop",
+      gallery1,
+      gallery2,
+      gallery3,
+      gallery4,
+      gallery5,
     ],
   },
 
@@ -89,5 +102,20 @@ export const CONFIG = {
     { icon: "♀", label: "Vestido largo o traje de noche" },
     { icon: "♂", label: "Traje oscuro o smoking" },
   ],
+
+  googleForm: {
+    url: "https://forms.google.com/",
+  },
+
+  //Datos luna de miel - Bancarios 
+  honeymoon: {
+    enabled: true,
+    title: "Luna de miel",
+    description: "Si querés acompañarnos en nuestra luna de miel, te dejamos nuestros datos.",
+    alias: "julia.y.pedro",
+    cbu: "0000000000000000000000",
+    bank: "Mercado Pago",
+  },
+
 
 };

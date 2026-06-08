@@ -4,9 +4,9 @@ import { useRef } from "react";
 import { T, FONT, fadeUp } from "./theme";
 
 const TESTIMONIALS = [
-    { quote: "Fue lo primero que comentaron todos nuestros invitados. La experiencia fue increíble.", author: "Valentina & Marcos", location: "Buenos Aires, 2024" },
-    { quote: "Súper fácil de usar. En dos días teníamos todos los RSVP confirmados desde el link.", author: "Lucía & Sebastián", location: "Montevideo, 2024" },
-    { quote: "El diseño es muy elegante. Nos encantó que podíamos incluir nuestra foto favorita.", author: "Carla & Tomás", location: "Córdoba, 2024" },
+    { quote: "Fue lo primero que comentaron todos nuestros invitados. La experiencia fue increíble.", author: "Valentina & Marcos", location: "Tucumán, 2024" },
+    { quote: "Súper fácil de usar. Super cómoda. En dos días teníamos todos los RSVP confirmados desde el link.", author: "Alina & Seba", location: "Salta, 2025" },
+    { quote: "Fue la invitación de 15 más linda de mi promoción, super moderna, a todos les encantó.", author: "Micaela", location: "Tucumán, 2025" },
 ];
 
 function Reveal({ children, delay = 0, style = {} }) {
@@ -62,7 +62,7 @@ export default function Testimonials() {
                         <span className="testimonials-h2-accent" style={{
                             fontFamily: FONT.serif, fontStyle: "italic", fontWeight: 400,
                         }}>
-                            las parejas.
+                            nuestros clientes.
                         </span>
                     </h2>
                 </Reveal>

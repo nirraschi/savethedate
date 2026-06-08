@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS custom properties from config — injected by App.jsx via inline style on root */
+:root {
+  --bg-dark: #1C1917;
+  --bg-light: #FAF7F2;
+  --accent: #8A9E85;
+  --accent-alt: #C4A882;
+  --text-dark: #1C1917;
+  --text-light: #FAF7F2;
+  --text-muted: #9a8e86;
+  --text-brown: #473b26;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Scrollbar sutil */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--accent-alt); border-radius: 2px; opacity: 0.5; }
+
+/* Foto placeholder cuando no hay imagen real */
+.photo-placeholder {
+  background: linear-gradient(135deg, #2a2520 0%, #3d3530 50%, #2a2520 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.15);
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+}

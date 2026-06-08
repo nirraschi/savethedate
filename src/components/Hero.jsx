@@ -92,7 +92,7 @@ export default function Hero() {
                 <motion.div variants={containerVariants} initial="hidden" animate="show">
 
                     <motion.div variants={childVariant} className="mb-7">
-                        <Tag>Invitaciones digitales de boda</Tag>
+                        <Tag>Invitaciones digitales</Tag>
                     </motion.div>
 
                     <motion.h1
@@ -117,22 +117,20 @@ export default function Hero() {
                         variants={childVariant}
                         className="mb-10 max-w-sm text-[15px] leading-8 text-[#6B6B68]"
                     >
-                        Diseños a medida con RSVP online, GPS, álbum de fotos y más.
-                        Un solo link, compartido por WhatsApp, que lo dice todo.
-                    </motion.p>
+Creamos invitaciones digitales elegantes, modernas y personalizadas para anunciar uno de los días más importantes de sus vidas.                    </motion.p>
 
                     <motion.div variants={childVariant} className="mb-12 flex flex-wrap gap-3">
                         <button
                             className="rounded-full bg-[#111111] px-7 py-3 text-sm font-medium text-white transition hover:opacity-90"
                             onClick={() => document.getElementById("modelos")?.scrollIntoView({ behavior: "smooth" })}
                         >
-                            Ver modelos
+                            Ver diseños
                         </button>
                         <button
                             className="rounded-full border border-[#ECECEA] px-7 py-3 text-sm text-[#111111] transition hover:border-[#111111]"
                             onClick={() => document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })}
                         >
-                            Consultar precio
+                            Consultar
                         </button>
                     </motion.div>
 

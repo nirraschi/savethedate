@@ -83,6 +83,7 @@ export default function Final() {
           <p className="font-sans text-[10px] tracking-[0.22em] text-[#8a8178] uppercase">
             {CONFIG.event.dateShort}
           </p>
+          
         </motion.div>
 
       </div>

@@ -14,7 +14,7 @@ const FEATURES = [
     {
         n: "01",
         name: "RSVP Online",
-        desc: "Confirmación en tiempo real, sin formularios externos.",
+        desc: "Confirmación en tiempo real. Podes ver los invitados confirmados en vivo.",
     },
     {
         n: "02",
@@ -33,8 +33,8 @@ const FEATURES = [
     },
     {
         n: "05",
-        name: "Instagram Wall",
-        desc: "El feed oficial de la boda embebido.",
+        name: "Itinerario",
+        desc: "Tus invitados verán el itinerario del evento.",
     },
     {
         n: "06",
@@ -69,7 +69,7 @@ const FEATURES = [
     {
         n: "12",
         name: "Agendar",
-        desc: "Un click para guardar en Google o Apple.",
+        desc: "Un click para guardar en Google Calendar.",
     },
 ];
 

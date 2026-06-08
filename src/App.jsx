@@ -10,7 +10,8 @@ import Contact from "./components/Contact"
 import { Routes, Route } from "react-router-dom"
 
 import Aurora from "./components/Models/Aurora/Main"
-import Eclipse from "./components/Models/Eclipse"
+import Petals from "./components/Models/Petals/Main"
+import Eclipse from "./components/Models/Eclipse/Main"
 
 function Home() {
   return (
@@ -37,8 +38,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/aurora" element={<Aurora />} />
-        <Route path="/eclipse" element={<Eclipse />} />
+        <Route path="/demo/aurora" element={<Aurora />} />
+        <Route path="/demo/eclipse" element={<Eclipse />} />
+        <Route path="/demo/petals" element={<Petals />} />
         {/* <Route path="/espacios" element={<Espacios />} />
         <Route path="/equipo-docente" element={<Equipo />} /> */}
       </Routes>

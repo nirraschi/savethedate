@@ -40,7 +40,7 @@ export function GoldLineH({ className = "" }) {
 // ── Etiqueta superior (ej: "Con amor, les anunciamos") ───
 export function TagLine({ children, className = "" }) {
   return (
-    <p className={`font-sans text-[10px] tracking-[0.28em] text-[#b8965a] uppercase ${className}`}>
+    <p className={`font-sans text-[12px] tracking-[0.28em] text-[#b8965a] uppercase ${className}`}>
       {children}
     </p>
   );
