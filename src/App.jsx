@@ -12,6 +12,8 @@ import { Routes, Route } from "react-router-dom"
 import Aurora from "./components/Models/Aurora/Main"
 import Petals from "./components/Models/Petals/Main"
 import Eclipse from "./components/Models/Eclipse/Main"
+import Quince from "./components/Models/Quince/Main"
+import QuinceV2 from "./components/Models/Quince_v2/Main"
 
 function Home() {
   return (
@@ -41,6 +43,8 @@ function App() {
         <Route path="/demo/aurora" element={<Aurora />} />
         <Route path="/demo/eclipse" element={<Eclipse />} />
         <Route path="/demo/petals" element={<Petals />} />
+        <Route path="/demo/quince" element={<Quince />} />
+        <Route path="/demo/quince-v2" element={<QuinceV2 />} />
         {/* <Route path="/espacios" element={<Espacios />} />
         <Route path="/equipo-docente" element={<Equipo />} /> */}
       </Routes>
