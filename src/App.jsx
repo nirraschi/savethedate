@@ -14,6 +14,7 @@ import Petals from "./components/Models/Petals/Main"
 import Eclipse from "./components/Models/Eclipse/Main"
 import Quince from "./components/Models/Quince/Main"
 import QuinceV2 from "./components/Models/Quince_v2/Main"
+import Loto from "./components/Models/Loto/Main"
 
 function Home() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/demo/petals" element={<Petals />} />
         <Route path="/demo/quince" element={<Quince />} />
         <Route path="/demo/quince-v2" element={<QuinceV2 />} />
+        <Route path="/demo/loto" element={<Loto />} />
         {/* <Route path="/espacios" element={<Espacios />} />
         <Route path="/equipo-docente" element={<Equipo />} /> */}
       </Routes>
