@@ -2,7 +2,7 @@
 //  ECLIPSE — RSVPSection
 // ═══════════════════════════════════════════════
 
-import { GoldLineV } from "../components.jsx";
+import { GoldLineV } from "../Components.jsx";
 
 export default function RSVPSection({ rsvp }) {
   return (

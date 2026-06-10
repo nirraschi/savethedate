@@ -2,7 +2,7 @@
 //  ECLIPSE — StorySection
 // ═══════════════════════════════════════════════
 
-import { SceneOverlay, Vignette, GoldLineV, Eyebrow } from "../components.jsx";
+import { SceneOverlay, Vignette, GoldLineV, Eyebrow } from "../Components.jsx";
 
 export default function StorySection({ story, images }) {
   const sceneImages = [images.scene1, images.scene2, images.scene3];

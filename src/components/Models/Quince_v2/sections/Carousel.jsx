@@ -7,7 +7,7 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { SectionHeading, GoldDivider } from "../components.jsx";
+import { SectionHeading, GoldDivider } from "../Components.jsx";
 
 // Variantes de animación del slide
 const SLIDE_VARIANTS = {

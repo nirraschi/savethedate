@@ -4,7 +4,7 @@
 
 import { useRef } from "react";
 import { useParallax } from "./hooks.js";
-import { SceneOverlay, Vignette, GoldLineV } from "../components.jsx";
+import { SceneOverlay, Vignette, GoldLineV } from "../Components.jsx";
 
 export default function HeroSection({ hero, images }) {
   const ref = useRef(null);

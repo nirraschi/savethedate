@@ -3,7 +3,7 @@
 // ╚══════════════════════════════════════════════════════╝
 
 import { motion } from "framer-motion";
-import { Icon, SectionHeading, GoldDivider, GlassCard } from "../components.jsx";
+import { Icon, SectionHeading, GoldDivider, GlassCard } from "../Components.jsx";
 
 function DressItem({ icon, title, detail, index }) {
     return (

@@ -5,7 +5,7 @@
 
 import { motion } from "framer-motion";
 import { useCountdown } from "../hooks.js";
-import { Eyebrow, FADE_UP } from "../components.jsx";
+import { Eyebrow, FADE_UP } from "../Components.jsx";
 
 function TimeCard({ value, label, index }) {
     return (

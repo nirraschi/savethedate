@@ -5,7 +5,7 @@
 
 import { motion } from "framer-motion";
 import { Camera } from "lucide-react";
-import { SectionHeading, GoldDivider, PinkButton } from "../components.jsx";
+import { SectionHeading, GoldDivider, PinkButton } from "../Components.jsx";
 
 export default function InstagramSection({ instagram }) {
     return (

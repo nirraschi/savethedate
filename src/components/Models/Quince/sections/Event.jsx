@@ -5,7 +5,7 @@
 // ╚══════════════════════════════════════════════════════╝
 
 import { motion } from "framer-motion";
-import { Icon, SectionHeading, GoldDivider, GoldButton, GlassCard } from "../components.jsx";
+import { Icon, SectionHeading, GoldDivider, GoldButton, GlassCard } from "../Components.jsx";
 
 // Ítem individual de la lista de evento
 function EventItem({ icon, label, value, detail, index }) {

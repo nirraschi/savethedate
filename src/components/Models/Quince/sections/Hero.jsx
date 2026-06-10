@@ -5,7 +5,7 @@
 // ╚══════════════════════════════════════════════════════╝
 
 import { motion } from "framer-motion";
-import { GoldDivider } from "../components.jsx";
+import { GoldDivider } from "../Components.jsx";
 
 // Partícula decorativa flotante
 function Particle({ x, y, delay, size = 3 }) {

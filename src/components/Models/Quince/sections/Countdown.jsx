@@ -5,7 +5,7 @@
 
 import { motion } from "framer-motion";
 import { useCountdown } from "../hooks.js";
-import { GoldDivider } from "../components.jsx";
+import { GoldDivider } from "../Components.jsx";
 
 // Tarjeta individual de unidad de tiempo
 function TimeCard({ value, label, index }) {

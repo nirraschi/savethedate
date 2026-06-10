@@ -3,7 +3,7 @@
 // ═══════════════════════════════════════════════
 
 import { useCountdown } from "./hooks.js";
-import { Eyebrow } from "../components.jsx";
+import { Eyebrow } from "../Components.jsx";
 
 export default function CountdownSection({ countdown, dateISO }) {
   const { d, h, m, s } = useCountdown(dateISO);

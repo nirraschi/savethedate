@@ -5,7 +5,7 @@
 // ╚══════════════════════════════════════════════════════╝
 
 import { motion } from "framer-motion";
-import { Eyebrow, SectionHeading, Divider, FADE_UP } from "../components.jsx";
+import { Eyebrow, SectionHeading, Divider, FADE_UP } from "../Components.jsx";
 
 function DressCard({ emoji, title, detail, fullWidth, index }) {
     return (

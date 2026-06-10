@@ -4,7 +4,7 @@
 //  En mobile: también se puede scrollear con el dedo (overflow-x).
 // ═══════════════════════════════════════════════
 
-import { Eyebrow } from "../components.jsx";
+import { Eyebrow } from "../Components.jsx";
 
 export default function GallerySection({ gallery, images }) {
   // Duplicamos las imágenes para el loop infinito

@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Copy, Check, Gift } from "lucide-react";
-import { SectionHeading, GoldDivider, GlassCard } from "../components.jsx";
+import { SectionHeading, GoldDivider, GlassCard } from "../Components.jsx";
 
 export default function GiftSection({ gift }) {
     const [copied, setCopied] = useState(false);

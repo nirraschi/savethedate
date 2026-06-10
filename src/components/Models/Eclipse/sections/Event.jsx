@@ -2,7 +2,7 @@
 //  ECLIPSE — EventSection
 // ═══════════════════════════════════════════════
 
-import { Eyebrow } from "../components.jsx";
+import { Eyebrow } from "../Components.jsx";
 
 export default function EventSection({ events }) {
     return (

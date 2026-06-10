@@ -6,7 +6,7 @@
 // ╚══════════════════════════════════════════════════════╝
 
 import { motion } from "framer-motion";
-import { Eyebrow, SectionHeading, Divider, Photo, FADE_UP } from "../components.jsx";
+import { Eyebrow, SectionHeading, Divider, Photo, FADE_UP } from "../Components.jsx";
 
 export default function GallerySection({ gallery }) {
     return (

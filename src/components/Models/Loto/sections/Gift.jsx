@@ -5,7 +5,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Eyebrow, SectionHeading, Divider, FloatingCard, FADE_UP } from "../components.jsx";
+import { Eyebrow, SectionHeading, Divider, FloatingCard, FADE_UP } from "../Components.jsx";
 
 export default function GiftSection({ gift }) {
     const [copied, setCopied] = useState(false);

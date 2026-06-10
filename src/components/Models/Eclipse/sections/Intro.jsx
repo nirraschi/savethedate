@@ -3,7 +3,7 @@
 // ═══════════════════════════════════════════════
 
 import { useState, useEffect } from "react";
-import { AnimText } from "../components.jsx";
+import { AnimText } from "../Components.jsx";
 
 export default function IntroScreen({ couple, onEnter }) {
   const [phase, setPhase] = useState(0); // 0=names, 1=subtitle, 2=cta

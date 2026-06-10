@@ -5,7 +5,7 @@
 // ╚══════════════════════════════════════════════════════╝
 
 import { motion } from "framer-motion";
-import { Eyebrow, SectionHeading, Divider, DarkButton, FADE_UP } from "../components.jsx";
+import { Eyebrow, SectionHeading, Divider, DarkButton, FADE_UP } from "../Components.jsx";
 
 function EventItem({ emoji, label, value, detail, index }) {
     return (
