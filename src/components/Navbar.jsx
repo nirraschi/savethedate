@@ -1,7 +1,7 @@
 // Navbar.jsx
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { T, FONT, ease } from "./theme.js"; 
+import { T, FONT, ease } from "./Theme.js"; 
 
 const NAV_LINKS = ["Invitaciones", "Modelos"];
 

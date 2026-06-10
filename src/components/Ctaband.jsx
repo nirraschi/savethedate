@@ -1,7 +1,7 @@
 // CTABand.jsx
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { T, FONT, fadeUp } from "./theme";
+import { T, FONT, fadeUp } from "./Theme";
 
 function Reveal({ children, delay = 0, style = {} }) {
     const ref = useRef(null);

@@ -1,7 +1,7 @@
 // Testimonials.jsx
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { T, FONT, fadeUp } from "./theme";
+import { T, FONT, fadeUp } from "./Theme";
 
 const TESTIMONIALS = [
     { quote: "Fue lo primero que comentaron todos nuestros invitados. La experiencia fue increíble.", author: "Valentina & Marcos", location: "Tucumán, 2024" },
