@@ -1,6 +1,6 @@
 // Marquee.jsx
 import { motion } from "framer-motion";
-import { T, FONT } from "./theme.js";
+import { T, FONT } from "./theme.js"; 
 
 const STRIP_ITEMS = [
     "RSVP Online", "GPS", "Lista de regalos", "Álbum de fotos",

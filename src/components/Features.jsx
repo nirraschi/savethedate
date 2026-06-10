@@ -8,7 +8,7 @@ import {
     fadeUp,
     containerVariants,
     childVariant,
-} from "./theme";
+} from "./theme.js";
 
 const FEATURES = [
     {

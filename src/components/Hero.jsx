@@ -1,7 +1,7 @@
 // Hero.jsx
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { FONT, ease, containerVariants, childVariant } from "./theme.js";
+import { FONT, ease, containerVariants, childVariant } from "./theme.js"; 
 
 // ── Reemplazá estos imports con tus imágenes reales ──────────────────────────
 import Image1 from "../assets/image-1.png";
