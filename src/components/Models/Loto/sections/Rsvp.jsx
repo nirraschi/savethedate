@@ -5,7 +5,7 @@
 // ╚══════════════════════════════════════════════════════════╝
 
 import { motion } from "framer-motion";
-import { Eyebrow, LightZoneButton, FADE_UP } from "../components.jsx";
+import { Eyebrow, LightZoneButton, FADE_UP } from "../Components.jsx";
 
 export default function RSVPSection({ rsvp }) {
     return (

@@ -17,10 +17,10 @@ import HeroSection from "./sections/Hero.jsx";
 import CountdownSection from "./sections/Countdown.jsx";
 import EventSection from "./sections/Event.jsx";
 import CarouselSection from "./sections/Carousel.jsx";
-import DressCodeSection from "./sections/DressCode.jsx";
+import DressCodeSection from "./sections/Dresscode.jsx";
 import InstagramSection from "./sections/Instagram.jsx";
 import GiftSection from "./sections/Gift.jsx";
-import RSVPSection from "./sections/RSVP.jsx";
+import RSVPSection from "./sections/Rsvp.jsx";
 
 // Google Fonts para este template
 const FONT_LINK_ID = "quince-fonts";
