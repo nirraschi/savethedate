@@ -15,9 +15,9 @@ import ScrollBackground from "./sections/ScrollBackground.jsx";
 import CountdownSection from "./sections/Countdown.jsx";
 import EventSection from "./sections/Event.jsx";
 import GallerySection from "./sections/Gallery.jsx";
-import DressCodeSection from "./sections/DressCode.jsx";
+import DressCodeSection from "./sections/Dresscode.jsx";
 import GiftSection from "./sections/Gift.jsx";
-import RSVPSection from "./sections/RSVP.jsx";
+import RSVPSection from "./sections/Rsvp.jsx";
 
 const FONT_ID = "boda-fonts";
 const FONT_HREF =
