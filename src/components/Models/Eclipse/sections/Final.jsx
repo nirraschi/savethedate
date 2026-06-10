@@ -4,7 +4,7 @@
 
 import { useRef } from "react";
 import { useParallax } from "./hooks.js";
-import { Vignette, GoldLineV } from "../components.jsx";
+import { Vignette, GoldLineV } from "../Components.jsx";
 
 export default function FinalSection({ final, images }) {
   const ref = useRef(null);

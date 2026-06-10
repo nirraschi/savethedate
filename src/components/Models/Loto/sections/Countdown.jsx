@@ -5,7 +5,7 @@
 
 import { motion } from "framer-motion";
 import { useCountdown } from "../hooks.js";
-import { Eyebrow, FloatingCard, FADE_UP } from "../components.jsx";
+import { Eyebrow, FloatingCard, FADE_UP } from "../Components.jsx";
 
 // Tarjeta individual de tiempo
 function TimeUnit({ value, label, index }) {

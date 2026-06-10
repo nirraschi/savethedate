@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import {
     Eyebrow, SectionHeading, Divider,
     FloatingCard, DarkZoneButton, FADE_UP,
-} from "../components.jsx";
+} from "../Components.jsx";
 
 function EventItem({ emoji, label, value, detail, index }) {
     return (

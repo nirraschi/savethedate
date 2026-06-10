@@ -4,7 +4,7 @@
 // ╚══════════════════════════════════════════════════════╝
 
 import { motion } from "framer-motion";
-import { Eyebrow, GradientButton, FADE_UP } from "../components.jsx";
+import { Eyebrow, GradientButton, FADE_UP } from "../Components.jsx";
 
 export default function RSVPSection({ rsvp }) {
     return (

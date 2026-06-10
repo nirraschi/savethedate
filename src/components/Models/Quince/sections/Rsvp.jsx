@@ -5,7 +5,7 @@
 
 import { motion } from "framer-motion";
 import { Heart, ExternalLink } from "lucide-react";
-import { SectionHeading, GoldDivider, GoldButton } from "../components.jsx";
+import { SectionHeading, GoldDivider, GoldButton } from "../Components.jsx";
 
 export default function RSVPSection({ rsvp }) {
     return (
