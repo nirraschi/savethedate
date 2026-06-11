@@ -1,53 +1,75 @@
 // ╔══════════════════════════════════════════════════════════╗
 //  SCROLL BACKGROUND
 //
-//  La foto se inyecta directo en document.body como fondo CSS.
-//  Es la única forma 100% confiable en iOS Safari — evita
-//  todos los bugs de position:fixed dentro de contenedores
-//  con overflow, transform o will-change.
+//  Solución cross-browser para fondo fijo en mobile:
 //
-//  El Hero y el RSVP tapan el fondo con su propio bg sólido.
-//  Las secciones del medio tienen fondo transparente
-//  → se ve la foto a través de ellas.
+//  background-attachment: fixed → NO funciona en iOS Safari
+//  position: fixed en div hijo  → NO funciona si hay un
+//    ancestro con transform/overflow/will-change
+//
+//  Solución: createPortal() monta el div fijo DIRECTAMENTE
+//  en document.body, sin ningún ancestro que lo rompa.
+//  Funciona en iOS Safari, Android Chrome y desktop.
 // ╚══════════════════════════════════════════════════════════╝
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
+
+function FixedBackground({ backgroundImage }) {
+    return createPortal(
+        <div
+            aria-hidden
+            style={{
+                position: "fixed",
+                inset: 0,
+                zIndex: 0,
+                // Sin pointer-events para no bloquear clicks en el contenido
+                pointerEvents: "none",
+            }}
+        >
+            {backgroundImage ? (
+                <img
+                    src={backgroundImage}
+                    alt=""
+                    style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        objectPosition: "center",
+                        filter: "brightness(0.38) saturate(0.65)",
+                        // Sin transform ni will-change — evita crear
+                        // un nuevo stacking context que rompa el fixed
+                        display: "block",
+                    }}
+                />
+            ) : (
+                <div
+                    style={{
+                        width: "100%",
+                        height: "100%",
+                        background: "var(--b-scroll-bg)",
+                    }}
+                />
+            )}
+
+            {/* Overlay de color del tema */}
+            <div
+                style={{
+                    position: "absolute",
+                    inset: 0,
+                    background: "var(--b-photo-overlay)",
+                }}
+            />
+        </div>,
+        document.body   // ← montado directo en body, sin ancestros problemáticos
+    );
+}
 
 export default function ScrollBackground({ backgroundImage }) {
-    useEffect(() => {
-        const prev = {
-            bg: document.body.style.background,
-            bgColor: document.body.style.backgroundColor,
-            bgSize: document.body.style.backgroundSize,
-            bgPos: document.body.style.backgroundPosition,
-            bgAttach: document.body.style.backgroundAttachment,
-            bgRepeat: document.body.style.backgroundRepeat,
-        };
+    // Esperamos que el DOM esté listo antes de usar createPortal
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => { setMounted(true); }, []);
+    if (!mounted) return null;
 
-        if (backgroundImage) {
-            // Foto fija en el body — funciona en todos los browsers
-            document.body.style.backgroundImage = `url(${backgroundImage})`;
-            document.body.style.backgroundSize = "cover";
-            document.body.style.backgroundPosition = "center";
-            document.body.style.backgroundAttachment = "fixed";
-            document.body.style.backgroundRepeat = "no-repeat";
-        } else {
-            // Sin foto → color sólido del tema
-            document.body.style.background = "var(--b-scroll-bg)";
-        }
-
-        // Limpia al desmontar (cuando se cambia de ruta)
-        return () => {
-            document.body.style.background = prev.bg;
-            document.body.style.backgroundColor = prev.bgColor;
-            document.body.style.backgroundSize = prev.bgSize;
-            document.body.style.backgroundPosition = prev.bgPos;
-            document.body.style.backgroundAttachment = prev.bgAttach;
-            document.body.style.backgroundRepeat = prev.bgRepeat;
-            document.body.style.backgroundImage = "";
-        };
-    }, [backgroundImage]);
-
-    // No renderiza nada — solo efecto en el body
-    return null;
+    return <FixedBackground backgroundImage={backgroundImage} />;
 }
